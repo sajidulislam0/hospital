@@ -17,10 +17,10 @@ class CreateDoctorInfosTable extends Migration {
             $table->string('DOCTOR_NAME');
             $table->string('DOCTOR_DESIGNATION');
             $table->string('DOCTOR_DEPARTMENT');
-            $table->date('DOCTOR_BIRTH_DATE');
-            $table->date('DOCTOR_JOINING_DATE');
+            $table->dateTime('DOCTOR_BIRTH_DATE');
+            $table->dateTime('DOCTOR_JOINING_DATE');
             $table->longText('DOCTOR_INFORMATION');
-            $table->string('DOCTOR_PROFILE_PICTURE');
+//            $table->string('DOCTOR_PROFILE_PICTURE')->default(0);
             $table->boolean('STATUS')->default(0);
             $table->timestamps();
         });

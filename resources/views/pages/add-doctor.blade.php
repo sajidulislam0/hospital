@@ -23,11 +23,11 @@
                     <header>Basic Information</header>
                 </div>
                 <div class="card-body col-md-6 offset-md-3 " id="bar-parent">
-                    {!! Form::open(array('url' => '#', 'class' => 'test','files' =>true)) !!}
+                    {!! Form::open(array('url' => '/save-doctor', 'class' => 'test','files' =>true)) !!}
                     <div class="form-row">
                         <div class="form-group col-md-6 ">
                             {!! Form::label('Your name:') !!}
-                            {!! Form::text('your_name', old('your_name'), ['class'=>'form-control', 'placeholder'=>'Enter Your Full Name']) !!}
+                            {!! Form::text('doctor_name', old('doctor_name'), ['class'=>'form-control', 'placeholder'=>'Enter Your Full Name']) !!}
                         </div>
                         <div class="form-group col-md-6 ">
                             {!! Form::label('Username:') !!}
@@ -81,10 +81,10 @@
                         {!! Form::label('Message:') !!}
                         {!! Form::textarea('message', old('message'), ['class'=>'form-control', 'placeholder'=>'Enter Message']) !!}
                     </div>
-                    <div class="form-group">
+<!--                    <div class="form-group">
                         {!! Form::label('Profile Picture:') !!}
                         {!! Form::file('profile_picture',['class'=>'form-control p-0']) !!}
-                    </div>
+                    </div>-->
                     <div class="form-group">
                         {{ Form::submit('Submit',array('class' => 'btn btn-success'))}}
                     </div>

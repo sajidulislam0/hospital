@@ -20,10 +20,8 @@
         <div class="col-md-12">
             <div class="tabbable-line">
                 <ul class="nav nav-pills nav-pills-rose">
-                    <li class="nav-item tab-all"><a class="nav-link active show"
-                                                    href="#tab1" data-toggle="tab">List View</a></li>
-                    <li class="nav-item tab-all"><a class="nav-link" href="#tab2"
-                                                    data-toggle="tab">Grid View</a></li>
+                    <li class="nav-item tab-all"><a class="nav-link active show" href="#tab1" data-toggle="tab">List View</a></li>
+                    <li class="nav-item tab-all"><a class="nav-link" href="#tab2"ata-toggle="tab">Grid View</a></li>data-toggle="tab">Grid View</a></li>                       
                 </ul>	
                 <div class="tab-content">
                     <div class="tab-pane active fontawesome-demo" id="tab1">
@@ -40,9 +38,7 @@
                                     </div>
                                     <div class="card-body ">
                                         <div class="table-scrollable">
-                                         
                                             <input type="text" class="form-control col-md-3 offset-md-9 mb-4" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
                                             <table class="table table-hover table-checkable order-column full-width" id="myTable">
                                                 <tr class="header">
                                                     <th></th>
@@ -55,7 +51,6 @@
                                                     <th>Joining Date</th>
                                                     <th> Action </th>
                                                 </tr>
-                                             
                                                 <tr class="odd gradeX">
                                                     <td class="patient-img">
                                                         <img src="../assets/img/doc/doc1.jpg" alt="">
@@ -79,7 +74,6 @@
                                                     </td>
                                                 </tr>
                                             </table>
-
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +100,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

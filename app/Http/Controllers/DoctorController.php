@@ -3,29 +3,43 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
+class DoctorController extends Controller {
 
-class DoctorController extends Controller
-{
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index() {
         //
     }
-    public function add_doctor()
-    {
-        $title= "Add new Doctor";
-        return view('pages.add-doctor')->with('title',$title);
+
+    public function add_doctor() {
+        $title = "Add new Doctor";
+        return view('pages.add-doctor')->with('title', $title);
     }
-    
-    
-    public function view_doctor()
-    {
-        $title= "View Doctor";
-        return view('pages.view-doctor')->with('title',$title);
+
+    public function save_doctor(Request $request) {
+
+        
+        $data = array();
+        $data['DOCTOR_NAME']         = $request->doctor_name;
+        $data['DOCTOR_DESIGNATION']  = $request->designation;
+        $data['DOCTOR_DEPARTMENT']   = $request->department;
+        $data['DOCTOR_BIRTH_DATE']   = $request->birth_date;
+        $data['DOCTOR_JOINING_DATE'] = $request->joining_date;
+        $data['DOCTOR_INFORMATION']  = $request->message;
+
+
+        DB::table('doctor_infos')->insert($data);
+        return Redirect::to('/add-doctor');
+    }
+
+    public function view_doctor() {
+        $title = "View Doctor";
+        return view('pages.view-doctor')->with('title', $title);
     }
 
     /**
@@ -33,8 +47,7 @@ class DoctorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
+    public function create() {
         //
     }
 
@@ -44,8 +57,7 @@ class DoctorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
         //
     }
 
@@ -55,8 +67,7 @@ class DoctorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
+    public function show($id) {
         //
     }
 
@@ -66,8 +77,7 @@ class DoctorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
+    public function edit($id) {
         //
     }
 
@@ -78,8 +88,7 @@ class DoctorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id) {
         //
     }
 
@@ -89,8 +98,8 @@ class DoctorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
+    public function destroy($id) {
         //
     }
+
 }
