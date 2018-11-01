@@ -18,4 +18,5 @@ Route::get('/login', 'DashboardController@login');
 
 
 Route::get('/add-doctor', 'DoctorController@add_doctor');
+Route::get('/view-doctor', 'DoctorController@view_doctor');
 

@@ -20,6 +20,13 @@ class DoctorController extends Controller
         $title= "Add new Doctor";
         return view('pages.add-doctor')->with('title',$title);
     }
+    
+    
+    public function view_doctor()
+    {
+        $title= "View Doctor";
+        return view('pages.view-doctor')->with('title',$title);
+    }
 
     /**
      * Show the form for creating a new resource.
