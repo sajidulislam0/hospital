@@ -23,7 +23,7 @@
                     <header>Basic Information</header>
                 </div>
                 <div class="card-body col-md-6 offset-md-3 " id="bar-parent">
-                    {!! Form::open(array('url' => '/save-doctor', 'class' => 'test','files' =>true)) !!}
+                    {!! Form::open(array('url' => '/save-doctor', 'class' => 'add-doctor-form','id'=> 'add_doctor','files' =>true)) !!}
                     <div class="form-row">
                         <div class="form-group col-md-6 ">
                             {!! Form::label('Your name:') !!}
@@ -41,11 +41,11 @@
                     <div class="form-row">
                         <div class="form-group col-md-6 ">
                             {!! Form::label('Password:') !!}
-                            {!! Form::password('password', ['class'=>'form-control', 'placeholder'=>'******']) !!}
+                            {!! Form::password('password', ['class'=>'form-control','id'=>'rel_password', 'placeholder'=>'******']) !!}
                         </div>
                         <div class="form-group col-md-6 ">
                             {!! Form::label('Re-enter Password:') !!}
-                            {!! Form::password('password', ['class'=>'form-control', 'placeholder'=>'******']) !!}
+                            {!! Form::password('con_password', ['class'=>'form-control', 'placeholder'=>'******']) !!}
                         </div>
                     </div>
                     <div class="form-row">

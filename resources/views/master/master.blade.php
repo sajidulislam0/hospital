@@ -616,6 +616,9 @@
         <!-- Common js-->
         <script src="{{asset('public/js/app.js')}}" ></script>
         <script src="{{asset('public/js/layout.js')}}" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js" ></script>
+        <script src="{{asset('public/js/validation.js')}}" ></script>
         <script src="{{asset('public/js/custom.js')}}" ></script>
         <!-- end js include path -->
 
