@@ -14,6 +14,7 @@ class CreateDoctorInfosTable extends Migration {
     public function up() {
         Schema::create('doctor_infos', function (Blueprint $table) {
             $table->increments('DOCTOR_ID');
+             $table->string('USER_ID');
             $table->string('DOCTOR_NAME');
             $table->string('DOCTOR_DESIGNATION');
             $table->string('DOCTOR_DEPARTMENT');

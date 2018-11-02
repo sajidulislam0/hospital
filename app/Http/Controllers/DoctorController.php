@@ -22,8 +22,6 @@ class DoctorController extends Controller {
     }
 
     public function save_doctor(Request $request) {
-
-        
         $data = array();
         $data['DOCTOR_NAME']         = $request->doctor_name;
         $data['DOCTOR_DESIGNATION']  = $request->designation;
