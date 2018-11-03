@@ -21,7 +21,7 @@
             <div class="tabbable-line">
                 <ul class="nav nav-pills nav-pills-rose">
                     <li class="nav-item tab-all"><a class="nav-link active show" href="#tab1" data-toggle="tab">List View</a></li>
-                    <li class="nav-item tab-all"><a class="nav-link" href="#tab2"ata-toggle="tab">Grid View</a></li>data-toggle="tab">Grid View</a></li>                       
+                    <li class="nav-item tab-all"><a class="nav-link" href="#tab2"  data-toggle="tab">Grid View</a></li>                       
                 </ul>	
                 <div class="tab-content">
                     <div class="tab-pane active fontawesome-demo" id="tab1">

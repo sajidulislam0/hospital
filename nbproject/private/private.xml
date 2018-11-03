@@ -5,9 +5,11 @@
         <group>
             <file>file:/G:/Server/htdocs/hospital/resources/views/pages/view-doctor.blade.php</file>
             <file>file:/G:/Server/htdocs/hospital/database/migrations/2018_10_31_170909_create_doctor_infos_table.php</file>
+            <file>file:/G:/Server/htdocs/hospital/public/js/validation.js</file>
             <file>file:/G:/Server/htdocs/hospital/resources/views/pages/dashboard.blade.php</file>
             <file>file:/G:/Server/htdocs/hospital/resources/views/master/master.blade.php</file>
             <file>file:/G:/Server/htdocs/hospital/public/js/custom.js</file>
+            <file>file:/G:/Server/htdocs/hospital/app/DoctorModel.php</file>
             <file>file:/G:/Server/htdocs/hospital/routes/web.php</file>
             <file>file:/G:/Server/htdocs/hospital/app/Http/Controllers/DoctorController.php</file>
             <file>file:/G:/Server/htdocs/hospital/database/migrations/2018_11_01_030257_create_user_models_table.php</file>

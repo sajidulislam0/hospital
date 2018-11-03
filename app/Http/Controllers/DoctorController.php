@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
@@ -30,7 +29,6 @@ class DoctorController extends Controller {
         $data['DOCTOR_JOINING_DATE'] = $request->joining_date;
         $data['DOCTOR_INFORMATION']  = $request->message;
 
-
         DB::table('doctor_infos')->insert($data);
         return Redirect::to('/add-doctor');
     }
@@ -39,7 +37,6 @@ class DoctorController extends Controller {
         $title = "View Doctor";
         return view('pages.view-doctor')->with('title', $title);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -48,7 +45,6 @@ class DoctorController extends Controller {
     public function create() {
         //
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -58,7 +54,6 @@ class DoctorController extends Controller {
     public function store(Request $request) {
         //
     }
-
     /**
      * Display the specified resource.
      *
@@ -68,7 +63,6 @@ class DoctorController extends Controller {
     public function show($id) {
         //
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -78,7 +72,6 @@ class DoctorController extends Controller {
     public function edit($id) {
         //
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -89,7 +82,6 @@ class DoctorController extends Controller {
     public function update(Request $request, $id) {
         //
     }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -99,5 +91,4 @@ class DoctorController extends Controller {
     public function destroy($id) {
         //
     }
-
 }
